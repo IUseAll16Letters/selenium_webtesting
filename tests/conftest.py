@@ -4,13 +4,13 @@ from selenium.webdriver.chrome.options import Options
 
 
 def pytest_addoption(parser):
-    parser.addoption('--language', action='store', default=None,
-                     help='Select required language: ru, es, en, fr, zh')
+    parser.addoption('--lang', action='store', default=None,
+                     help='Select required language: ru, es, en, fr, zh-CN')
 
 
 @pytest.fixture(scope='function')
 def browser(request):
-    language = request.config.getoption("language")
+    language = request.config.getoption("lang")
     browser = None
 
     options = Options()

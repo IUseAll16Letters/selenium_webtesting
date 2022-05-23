@@ -9,4 +9,4 @@
 |fr|
 
 ### example request
-python -v -s --language=es --browser=chrome test_items.py
+pytest -v -s --language=es --browser=chrome test_items.py

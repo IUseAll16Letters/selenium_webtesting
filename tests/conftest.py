@@ -10,10 +10,12 @@ def pytest_addoption(parser):
                     default='ru',
                     help='Select required language: ru, es, en, fr'
                     )
-    parser.addoption('--browser', action='store',
+    parser.addoption(
+                     '--browser', action='store',
                      choices=('chrome', 'firefox'),
                      default='chrome',
-                     help='Optional test for browsers: chrome or firefox')
+                     help='Optional test for browsers: chrome or firefox'
+                    )
 
 
 @pytest.fixture(scope='function')

@@ -2,3 +2,4 @@ scripts
 .idea
 .pytest_cache
 tests/__pychache__
+cooking.md
